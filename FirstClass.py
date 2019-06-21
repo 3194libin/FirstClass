@@ -13,7 +13,7 @@ class student:
     def sleep(self):
         print("我特别爱睡觉")
 
-s = student(20171103194,'man',21)
-s.climb()
-s.id = 22
-print(s.id)
+class HigherStudent(student):
+    pass
+s = HigherStudent(2017,'woman',18)
+s.run()
