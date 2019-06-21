@@ -1,8 +1,9 @@
 class student:
-    id = '20171103194'
-    sex = 'man'
-    age = 21
 
+    def __init__(self,id,sex,age):
+        self.id = id
+        self.sex = sex
+        self.age = age
     def run(self):
         print("我跑的很快！")
 
@@ -12,5 +13,7 @@ class student:
     def sleep(self):
         print("我特别爱睡觉")
 
-s = student()
+s = student(20171103194,'man',21)
 s.climb()
+s.id = 22
+print(s.id)
